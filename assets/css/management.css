@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    background-color: rgb(187, 215, 240);
+}
+
+#title1, #title2 {
+    text-align: center;
+    color: brown;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 150px;
+    display: inline-flex;
+}
+
+.menu_item {
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.table_Profile {
+    border-spacing: 30px;
+    margin: auto;
+}
+
+.editProfile > td {
+    width: 100px;
+}
+
+.editProfile_item {
+    display: flex;
+}
+
+.editProfile_item > input {
+    flex: 1;
+}
+
+.editProfile_item > label {
+    min-width: 100px;
+    margin: auto;
+}
+
+.error_mes {
+    width: 268px;
+}
+
+.input_item {
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.button_item {
+    padding: 5px 40px;
+    width: 160px;
+    background-color: rgb(123, 81, 228);
+    border: none;
+    border-radius: 3px;
+}
+
+.button_item:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+.container_list {
+    width: 100%;
+}
+
+.list_item{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.list_item tr td{
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.list_item > tr {
+    width: 100%;
+}
+
+.list_item > td {
+    width: 50px;
+}

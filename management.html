@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/management.css">
+    <title>Management</title>
+</head>
+<body onload="renderData()">
+    <h2 id="title1">Thông Tin Sách Đang Thêm</h2>
+    <h2 id="title2" style="display: none;">Thông Tin Sách Đang Chỉnh Sửa</h2>
+    <div class="container">
+        <!--  -->
+            
+        <table class="table_Profile">
+            <div class="editProfile">
+                <form autocomplete="off" >
+                <tr>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">ID</label>
+                            <input class="input_item" type="text" placeholder="ID (bắt buộc)" id="Id">
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Tên Sách</label>
+                            <input class="input_item" type="text" placeholder="Tên Sách (bắt buộc)" id="name">
+                        </div>
+                        <!-- <div class="error_mes"></div> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Thể Loại</label>
+                            <input class="input_item" type="text" placeholder="Thể Loại (bắt buộc)" id="title">
+                            
+                        </div>
+                        
+                        <!-- <div class="error_mes"></div> -->
+                    </td>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Tác Giả</label>
+                            <input class="input_item" type="text" placeholder="Tác Giả..." id="gender">
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Nhà Xuất Bản</label>
+                            <input class="input_item" type="text" placeholder="Nhà Xuất Bản..." id="company">
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Năm Xuất Bản</label>
+                            <input class="input_item" type="date" id="year" >
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                </tr>
+             
+                <tr>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Số Lượng</label>
+                            <input class="input_item" type="number" placeholder="Số Lượng (bắt buộc)"" id="quantity" >
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Số Trang</label>
+                            <input class="input_item" type="number" placeholder="Số Trang..." id="page">
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td>
+                        <div class="editProfile_item">
+                            <label for="label_item">Đơn Giá</label>
+                            <input class="input_item" type="number" placeholder="Đơn Giá (bắt buộc)" id="pay">
+                            
+                        </div>
+                            <!-- <div class="error_mes"></div> -->
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+                <tr style="text-align: center;">
+                    <td>
+                        <div class="menu">
+                            <div class="menu_item">
+                                <input type="submit" value="Thêm" class="button_item" onclick="addData()"></input>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="menu">
+                            <div class="menu_item">
+                                <input type="submit" value="Cập Nhật" class="button_item" onclick="changeData()"></input>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="hidden" id="index">
+                        </div>
+                    </td>
+                </tr> 
+                </form>
+            </div> 
+        </table>
+    </div>
+    <hr>
+    <h1>Danh Sách Quản Lí Sách</h1>
+    <div class="container_list">
+        <table class="list_item" id="list_data" style="border: 20px;">
+                <tr>
+                    <td>ID Sách</td>
+                    <td>Tên Sách</td>
+                    <td>Thể Loại</td>
+                    <td>Tác Giả</td>
+                    <td>Nhà Xuất Bản</td>
+                    <td>Năm Xuất Bản</td>
+                    <td>Số Lượng</td>
+                    <td>Số Trang</td>
+                    <td>Đơn Giá</td>
+                    <td>Xử Lí</td>
+                </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="./javascript/management.js"></script>
+</body>
+</html>

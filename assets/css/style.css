@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 50px;
+    background-color: rgb(243, 108, 29);
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.nav_menu li{
+    display: inline-block;
+}
+
+.nav_menu li a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 15px;
+    color: white;
+}
+
+.nav_menu li:hover a {
+    background-color: gray;
+    color: rgb(4, 9, 21);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url(file:///D:/assets/img/img1.jpg) top center / cover no-repeat;
+}
+
